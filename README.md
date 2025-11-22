@@ -48,10 +48,10 @@ Edit `backend/config/cameras.json` untuk menambah atau mengubah sumber kamera. S
 
 ## Jalankan dengan Docker Compose
 ```bash
-docker-compose up --build
+docker compose up
 ```
-- Backend tersedia di `http://localhost:8000`
-- Frontend tersedia di `http://localhost:5173`
+- Backend tersedia di `http://localhost:8000` (container otomatis menjalankan `pip install -r requirements.txt` sebelum `uvicorn`).
+- Frontend tersedia di `http://localhost:5173` (container otomatis menjalankan `npm install` dan `npm run dev`).
 
 ## Integrasi model YOLO
 - Ganti logika mock pada `InferenceService.run_inference` (`backend/app/services/inference.py`) dengan pemanggilan model YOLO Anda. Fungsi tersebut menerima `camera_id` dan harus mengembalikan `DetectionMessage` berisi daftar `Detection`.
