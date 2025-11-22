@@ -1,0 +1,6 @@
+[
+  {"camera_id": "cam_1", "name": "Loading Dock", "rtsp_url": "rtsp://example.com/cam1"},
+  {"camera_id": "cam_2", "name": "Warehouse", "rtsp_url": "rtsp://example.com/cam2"},
+  {"camera_id": "cam_3", "name": "Office", "file_path": "videos/office.mp4"},
+  {"camera_id": "cam_4", "name": "Outdoor", "file_path": "videos/outdoor.mp4"}
+]
